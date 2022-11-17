@@ -26,12 +26,12 @@ export function Integrante(){
         }
     ]
     return(
-        <div className="row row-cols-1 row-cols-md-4 g-0 mt-5">
+        <div className="row row-cols-1 row-cols-md-4 g-0  bg-dark p-5">
             {
                 integrantes.map(function(integrante){
                     return(
                         <>
-                            <div className="col mt-3">
+                            <div className="col mt-3 p-3">
                                 <div className="card h-100">
                                     <img src={integrante.Fotografia} alt="foto" className="img-fluit w-100 h-100"/>
                                     <h4 className="text-center fw-bold">Nombre: {integrante.Nombre}</h4>

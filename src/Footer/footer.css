@@ -2,7 +2,11 @@
     background-color: #000;
 
 }
-.redes{
+.redes {
+    object-fit: cover;
+}
+
+.redesI{
 width: 70px;
 height: 70px;
 }
@@ -14,3 +18,17 @@ height: 70px;
         width: 70px;
         height: 70px;
         }
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 5px;
+}
