@@ -24,6 +24,8 @@ useEffect(function(){
 
 },[])
 
+console.log(canciones)
+
 if(estamosCargando==true){
 
     return(
@@ -38,15 +40,25 @@ if(estamosCargando==true){
     <>
         <h1>Estamo listas las canciones</h1>
 
-        {
-            canciones.tracks.map(function(cancion){
-                return(
+            <div className="container">
+                <div className="row">
+                {
+                    canciones.tracks.map(function(cancion){
+                        return(
 
-                    <h5>{cancion.name}</h5>
-                    
-                )
-            })
-        }
+                            <div className="col-12 col-md-4">
+                                <h5>{cancion.name}</h5>
+                                <img src={cancion.album.images[1].url} />
+                                <audio src={cancion.preview_url} controls="controls"></audio>
+                            </div>
+                            
+                        )
+                    })
+                }
+                </div>
+            </div>
+
+        
         </>
         )
 }
